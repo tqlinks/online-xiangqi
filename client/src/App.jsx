@@ -6,7 +6,7 @@ import ChessBoard from './components/ChessBoard';
 import { XIANGQI_FEN_START, makeMove } from './logic/XiangqiLogic';
 
 // ĐỊA CHỈ SERVER: Dùng biến môi trường (Vercel/Netlify) hoặc fallback về localhost
-const SERVER_URL = import.meta.env.VITE_SERVER_URL || 'http://localhost:3001';
+const SERVER_URL = import.meta.env.VITE_SERVER_URL || 'https://online-xiangqi.onrender.com/';
 const socket = io(SERVER_URL); 
 
 function App() {
